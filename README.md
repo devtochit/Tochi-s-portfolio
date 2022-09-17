@@ -1,48 +1,39 @@
-# curriculum-databases-projects-template
+# Portfolio 🔥
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+My personal portfolio with a theme inspired by Naruto's Sage Mode 😎
 
+![Naruto's_Sage_Mode](https://user-images.githubusercontent.com/49603590/137616241-4497a545-2868-4cb9-abd8-19f1d9ca10c7.png)
 
-## Getting Started
+## Process and Goal 💪 🚀
 
-This repository includes files with plain SQL that can be used to recreate a database:
+ Designed from  Figma  🖌️
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+<!-- I also made sure to focus on accessibility. It has been tested with NVDA screen reader and also includes a skip link 👏 -->
 
+## My Favourite Part  💪 🚀
+My favorite parts of the project are the
+- converting the build from react to preact
+- animations 😆
 
-## Authors
+## Installation 🛠️
 
-👤 **Author1**
+You just gotta install with `npm` after cloning it 🤘 🎧
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## Technologies ⚒️
 
-👤 **Author2**
+- TypeScript 💙
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Styled Components 💅
 
-## 🤝 Contributing
+- React 🚙
 
-Contributions, issues, and feature requests are welcome!
+- Next 🤍
 
-Feel free to check the [issues page](../../issues/).
+## Demo 🎥 📸
 
-## Show your support
+<!-- https://user-images.githubusercontent.com/49603590/137616210-9b734169-00d1-4a93-9b27-38ea894caa8b.mp4 -->
 
-Give a ⭐️ if you like this project!
+## License :nerd_face: ⚔️
 
-## Acknowledgments
+Built by Jesse Uzoma under MIT license :two_hearts: 😘 💋 💕.
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
