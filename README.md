@@ -11,7 +11,7 @@ My personal portfolio with a theme inspired by Naruto's Sage Mode 😎
 <!-- I also made sure to focus on accessibility. It has been tested with NVDA screen reader and also includes a skip link 👏 -->
 
 ## My Favourite Part  💪 🚀
-My favorite parts of the project are the
+My favorite parts of the project is the
 - converting the build from react to preact
 - animations 😆
 
