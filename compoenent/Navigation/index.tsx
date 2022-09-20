@@ -10,25 +10,33 @@ import { LinkedInIcon } from "../../icons/LinkedIn"
 import { TwitterIcon } from "../../icons/Twitter";
 import {
   IntersectingElement,
-  NavigationWrapper
+  NavigationWrapper,
+  SkipLink,
+  LogoLink,
 }from './styles'
 
-type MainRefProps={mainRef:React.MutableRefObject<HTMLElement | null>}
+type MainRefProps = {
+  mainRef:React.MutableRefObject<HTMLElement | null>
+};
 
-function index() {
+function Navigation({mainRef}:MainRefProps) {
   return (
     <>
     {/* < IntersectingElement/> */}
     <NavigationWrapper>
-
       <Link href="#main" passHref>
- <Skip>
-
- </Skip>
+              <SkipLink onClick={()=> mainRef.current?.focus()}>
+                  Skip to Main Content
+              </SkipLink>
+      </Link>
+      <Link href={"/"} passHref>
+  < LogoLink>
+              Jesse Uzoma
+  </LogoLink>
       </Link>
     </NavigationWrapper>
     </>
   )
 }
 
-export default index
+export default Navigation

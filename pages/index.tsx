@@ -1,14 +1,16 @@
 import *as React from 'react'
 import type { NextPage } from 'next'
-import Home from '../compoenent/Home/Home'
+import Navigation from '../compoenent/Navigation'
 
 
 
 
 const Page:NextPage=()=> {
+  const mainRef = React.useRef<null | HTMLElement>(null);
+
   return (
     <div>
- <Home/>
+          <Navigation  mainRef={mainRef}/>
     </div>
   )
 }
