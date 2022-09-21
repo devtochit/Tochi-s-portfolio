@@ -16,6 +16,13 @@ import {
   NarutoFace,
   IconsWrapper,
   IconLink,
+  MobileNavigationWrapper,
+  NavLink,
+  LinkText,
+  NavigationTabletWrapper,
+
+
+
 }from './styles'
 import { useOnScreen } from '../../hook/UseOnScreen';
 import { UseMedia } from '../../hook/useMedia';
@@ -38,7 +45,7 @@ function Navigation({mainRef}:MainRefProps) {
 
   return (
     <>
-    < IntersectingElement ref={setIntersectingElement}/>
+    {/* < IntersectingElement ref={setIntersectingElement}/> */}
     <NavigationWrapper shouldShowShadow={!isVisible} >
       <Link href="#main" passHref>
               <SkipLink onClick={()=> mainRef.current?.focus()}>
@@ -50,11 +57,24 @@ function Navigation({mainRef}:MainRefProps) {
               Jesse Uzoma
          </LogoLink>
       </Link>
-
+      {isTabletLayout && (
+   <NavigationTabletWrapper>
+       <Link href="#about" passHref>
+         <NavLink  onClick={ ()=> focusOnSection("about")}> About.</NavLink>
+       </Link>
+       <Link href="#experience" passHref>
+       <NavLink  onClick= { ()=> focusOnSection("experience")}> Experience.</NavLink>
+          </Link>
+          <Link href="#work" passHref>
+         <NavLink  onClick={ ()=> focusOnSection("work")}> Work.</NavLink>
+         </Link>
+         <Link href="#contact" passHref>
+        <NavLink  onClick={ ()=> focusOnSection("contact")}> Contact.</NavLink>
+         </Link>
+   </NavigationTabletWrapper>
+   )}
       <NarutoFace aria-hidden="true" />
-
         <IconsWrapper>
-
           <Link href="https://www.linkedin.com/in/jesseuzoma/" passHref>
          <IconLink target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
             <LinkedInIcon/>
@@ -78,9 +98,34 @@ function Navigation({mainRef}:MainRefProps) {
            <PenSVG/>
               </IconLink>
               </Link>
+              </IconsWrapper>
 
-          </IconsWrapper>
-
+          <MobileNavigationWrapper>
+  <Link href="#about" passHref>
+    <NavLink>
+      <FaceSVG aria-hidden="true" />
+      <LinkText>About</LinkText>
+    </NavLink>
+  </Link>
+  <Link href="#experience" passHref>
+    <NavLink>
+      <TimelineSVG aria-hidden="true" />
+      <LinkText>Experience</LinkText>
+    </NavLink>
+  </Link>
+  <Link href="#work" passHref>
+    <NavLink>
+      <HammerSVG aria-hidden="true" />
+      <LinkText>Work</LinkText>
+    </NavLink>
+  </Link>
+  <Link href="#contact" passHref>
+    <NavLink>
+      <MailSVG aria-hidden="true" />
+      <LinkText>Contact</LinkText>
+    </NavLink>
+  </Link>
+</MobileNavigationWrapper>
     </NavigationWrapper>
     </>
   )
