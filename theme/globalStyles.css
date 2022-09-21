@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  --orange: #e86e38;
+  --red: #f72405;
+  --pink: #ffaa84;
+  --darkbrown: #121517;
+  --montserrat: "Montserrat";
+  --oxanium: "Oxanium";
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 180px;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background: var(--darkbrown);
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 0.7rem;
+  background-color: #0a0d0e;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: var(--orange);
+}
+
+body div[id^="__next"] {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+}
