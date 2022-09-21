@@ -45,7 +45,7 @@ function Navigation({mainRef}:MainRefProps) {
 
   return (
     <>
-    {/* < IntersectingElement ref={setIntersectingElement}/> */}
+    < IntersectingElement ref={setIntersectingElement}/>
     <NavigationWrapper shouldShowShadow={!isVisible} >
       <Link href="#main" passHref>
               <SkipLink onClick={()=> mainRef.current?.focus()}>
