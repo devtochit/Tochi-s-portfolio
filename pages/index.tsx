@@ -6,11 +6,14 @@ import Navigation from '../compoenent/Navigation'
 
 
 const Page:NextPage=()=> {
+
   const mainRef = React.useRef<null | HTMLElement>(null);
 
   return (
     <div>
-          <Navigation  mainRef={mainRef}/>
+      <Navigation
+        mainRef={mainRef}
+      />
     </div>
   )
 }
